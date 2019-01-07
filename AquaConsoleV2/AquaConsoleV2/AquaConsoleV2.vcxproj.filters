@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="HPP Files">
+      <UniqueIdentifier>{708c5d97-c49a-423f-bebf-91b5f0746997}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -20,6 +23,9 @@
     </ClInclude>
     <ClInclude Include="console.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="termcolor.hpp">
+      <Filter>HPP Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
