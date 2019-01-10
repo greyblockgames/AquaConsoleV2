@@ -12,7 +12,7 @@ namespace ac_console
 	bool new_title(std::string title)
 	{
 #if defined WIN32 || defined(_WIN64)
-		return SetConsoleTitle(title.c_str());
+		return SetConsoleTitleA(title.c_str());
 
 #elif defined(__APPLE__)
 		return false;

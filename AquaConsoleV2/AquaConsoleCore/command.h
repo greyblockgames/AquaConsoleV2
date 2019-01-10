@@ -8,10 +8,16 @@ namespace ac_core
 	class command final
 	{
 	private:
+
+		/**
+		 * \brief Name of the command.
+		 */
+		std::string name_;
+
 		/**
 		 * \brief Number of parameters in the command.
 		 */
-		int parameters_;
+		int parameters_;		
 
 		/**
 		 * \brief Help text string.
@@ -21,18 +27,20 @@ namespace ac_core
 		/**
 		 * \brief Command callback. Takes a vector of strings as command parameters.
 		 */
-		bool (*callback_)(std::vector <std::string>);
+		bool (*callback_)(const std::vector <std::string>);
 
 
 	public:
-		command(int parameters, std::string help, bool (*callback)(std::vector <std::string>));
+		command(std::string name,int parameters, std::string help, bool (*callback)(std::vector <std::string>));
 		~command();
 
+	
 		/**
-		 * \brief Runs the command.
-		 * \return Was successful.
+		 * \brief Runs the command
+		 * \param arguments Command Arguments.
+		 * \return Whether or not the call succeeded.
 		 */
-		bool run() const;
+		bool run(const std::vector <std::string> arguments) const;
 
 		/**
 		 * \return Basic command help.
@@ -43,5 +51,7 @@ namespace ac_core
 		 * \return Number of parameters.
 		 */
 		int parameter_count() const;
+
+		std::string get_name() const;
 	};
 }
