@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <functional>
 
 
 namespace ac_core
@@ -27,20 +28,21 @@ namespace ac_core
 		/**
 		 * \brief Command callback. Takes a vector of strings as command parameters.
 		 */
-		bool (*callback_)(const std::vector <std::string>);
+		std::function<bool(const std::vector <std::string>)> function_;
+		//bool (*callback_)(const std::vector <std::string>);
 
 
 	public:
-		command(std::string name,int parameters, std::string help, bool (*callback)(std::vector <std::string>));
+		command(std::string name,int parameters, std::string help, std::function<bool(const std::vector <std::string>)>);
 		~command();
 
 	
 		/**
 		 * \brief Runs the command
-		 * \param arguments Command Arguments.
+		 * \param parameters Command Arguments.
 		 * \return Whether or not the call succeeded.
 		 */
-		bool run(const std::vector <std::string> arguments) const;
+		bool run(const std::vector <std::string> parameters) const;
 
 		/**
 		 * \return Basic command help.

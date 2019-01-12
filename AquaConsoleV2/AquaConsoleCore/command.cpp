@@ -6,22 +6,22 @@
 namespace ac_core
 {
 	command::command(std::string name, const int parameters, const std::string help,
-	                 bool (*callback)(std::vector <std::string>))
+	                 std::function<bool(const std::vector <std::string>)> callback)
 	{
 		std::transform(name.begin(), name.end(), name.begin(), tolower);
 		name_ = name;
 		parameters_ = parameters;
 		help_ = help;
-		callback_ = callback;
+		function_ = callback;
 	}
 
 	command::~command()
 	{
 	}
 
-	bool command::run(const std::vector <std::string> arguments) const
+	bool command::run(const std::vector <std::string> parameters) const
 	{
-		return callback_(arguments);
+		return function_(parameters);
 	}
 
 	std::string command::get_help() const
