@@ -22,16 +22,17 @@ namespace ac_core
 
 	bool core::help_command(const std::vector <std::string> arguments) const
 	{
-		std::cout << "==============" << std::endl
-			<< "help menu 3000" << std::endl
-			<< "=============="
-			<< std::endl;
+		std::cout << std::left << std::setw(14) << "======="
+			<< std::right << std::setw(3) << "===========" << std::endl
+			<< std::left << std::setw(14) << "COMMAND"
+			<< std::right << std::setw(3) << "DESCRIPTION" << std::endl
+			<< std::left << std::setw(14) << "======="
+			<< std::right << std::setw(3) << "===========" << std::endl;		
 		for (const auto & p : command_map_)
 		{
 			std::cout << std::left << std::setw(14) << p.first
 				<< std::right << std::setw(3) << p.second.get_help() << std::endl;
 		}
-
 		return true;
 	}
 

@@ -21,4 +21,18 @@ namespace ac_console
 	 */
 	std::string get_command(s_vector &arguments);
 
+
+	/**	 
+	 * \return The current working directory of the application.
+	 */
+	std::string get_current_working_dir();
+
+
+	/**
+	 * \brief Changes the current working directory.
+	 * \param path New working directory path.
+	 * \return Did the path change succeed?
+	 */
+	bool change_current_working_dir(std::string path);
+
 }
