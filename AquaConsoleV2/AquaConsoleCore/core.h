@@ -33,11 +33,7 @@ namespace ac_core
 		 */
 		bool run_command(std::string command_name, std::vector <std::string> arguments) const;
 
-		bool help_command(std::vector <std::string> arguments) const;
-		
-		//TODO
-		//bool reload_scripts(std::string directory);
-	
+		bool help_command(std::vector <std::string> arguments) const;	
 
 		explicit core(bool load_scripts);		
 	};

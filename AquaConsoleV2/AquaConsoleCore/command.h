@@ -16,9 +16,9 @@ namespace ac_core
 		std::string name_;
 
 		/**
-		 * \brief Number of parameters in the command.
+		 * \brief Parameters in the command.
 		 */
-		int parameters_;		
+		std::vector <std::string> parameters_;
 
 		/**
 		 * \brief Help text string.
@@ -29,11 +29,9 @@ namespace ac_core
 		 * \brief Command callback. Takes a vector of strings as command parameters.
 		 */
 		std::function<bool(const std::vector <std::string>)> function_;
-		//bool (*callback_)(const std::vector <std::string>);
-
 
 	public:
-		command(std::string name,int parameters, std::string help, std::function<bool(const std::vector <std::string>)>);
+		command(std::string name, const std::vector <std::string> parameters, std::string help, std::function<bool(const std::vector <std::string>)> callback);
 		~command();
 
 	
@@ -50,10 +48,14 @@ namespace ac_core
 		std::string get_help() const;
 
 		/**
-		 * \return Number of parameters.
+		 * \return Returns Parameters.
 		 */
-		int parameter_count() const;
+		std::vector<std::string> get_parameters() const;
 
+
+		/**		 
+		 * \return Command name.
+		 */
 		std::string get_name() const;
 	};
 }

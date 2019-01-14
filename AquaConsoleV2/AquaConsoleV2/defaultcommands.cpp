@@ -14,8 +14,10 @@ namespace ac_console_commands
 		return ac_console::change_current_working_dir(path);
 	}
 
+
+
 	void register_commands(ac_core::core & instance)
 	{
-		instance.register_command(ac_core::command("cd", 0, "changes working directory", change_directory));
+		instance.register_command(ac_core::command("cd", std::vector<std::string>{"Directory to switch to"}, "changes working directory", change_directory));
 	}
 }
