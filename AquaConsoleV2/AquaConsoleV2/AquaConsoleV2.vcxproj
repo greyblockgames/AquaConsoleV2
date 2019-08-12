@@ -106,7 +106,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\lukas\Projects\AquaConsoleV2\AquaConsoleV2\AquaConsoleCore</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\lukas\Projects\AquaConsoleV2\AquaConsoleV2\AquaConsoleCore;C:\Users\lukas\Projects\AquaConsoleV2\AquaConsoleV2\Lua5.3.5</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,7 +143,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\lukas\Projects\AquaConsoleV2\AquaConsoleV2\AquaConsoleCore</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\lukas\Projects\AquaConsoleV2\AquaConsoleV2\AquaConsoleCore;C:\Users\lukas\Projects\AquaConsoleV2\AquaConsoleV2\Lua5.3.5</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -175,6 +175,9 @@
   <ItemGroup>
     <ProjectReference Include="..\AquaConsoleCore\AquaConsoleCore.vcxproj">
       <Project>{600cd1e1-c1fa-4a4b-bcad-d130e6682ed6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Lua5.3.5\Lua5.3.5.vcxproj">
+      <Project>{00300839-68f6-4d51-a3cd-0a80c724d6d7}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

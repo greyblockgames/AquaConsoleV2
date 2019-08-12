@@ -1,6 +1,8 @@
+
 #include "pch.h"
 #include "defaultcommands.h"
 #include "termcolor.hpp"
+#include "utilities.h"
 
 namespace ac_console_commands
 {
@@ -11,7 +13,7 @@ namespace ac_console_commands
 		{
 			path.append(value + " ");
 		}
-		return ac_console::change_current_working_dir(path);
+		return ac_core::change_current_working_dir(path);
 	}
 
 

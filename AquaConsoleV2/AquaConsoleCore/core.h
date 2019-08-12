@@ -1,9 +1,12 @@
 #pragma once
 #include "command.h"
 #include <map>
+#include "lua_manager.h"
+
 
 namespace ac_core
 {
+
 	class core final
 	{
 	private:
@@ -13,10 +16,16 @@ namespace ac_core
 		 */
 		std::map<std::string, command> command_map_;
 
+		/**
+		 * \brief The Lua Manager
+		 */
+		lua_manager lua_manager_;
 		
 
-	public:
-		core();
+		
+
+	public:		
+		explicit core(bool load_scripts);
 		~core();
 
 		/**
@@ -35,6 +44,6 @@ namespace ac_core
 
 		bool help_command(std::vector <std::string> arguments) const;	
 
-		explicit core(bool load_scripts);		
+			
 	};
 }

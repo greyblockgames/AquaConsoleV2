@@ -56,20 +56,19 @@ namespace ac_core
 			return true;
 		}
 		return false;
-	}
-
-	core::core()
-	{
-		register_command(command("help", std::vector <std::string>{"OPTIONAL: Specific Command"},
-		                         "Returns the help menu", [this](const std::vector <std::string> x)
-		                         {
-			                         return help_command(x);
-		                         }));
-	}
+	}	
+	
 
 	core::core(bool load_scripts)
 	{
-		core();
+		register_command(command("help", std::vector <std::string>{"OPTIONAL: Specific Command"},
+			"Returns the help menu", [this](const std::vector <std::string> x)
+		{
+			return help_command(x);
+		}));
+
+		lua_manager_.register_commands(this,"scripts");
+		
 	}
 
 	core::~core()
