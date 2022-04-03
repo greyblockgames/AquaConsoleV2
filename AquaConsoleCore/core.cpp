@@ -1,5 +1,3 @@
-
-#include "stdafx.h"
 #include "core.h"
 #include <iostream>
 #include <iomanip>
@@ -24,7 +22,7 @@ namespace ac_core {
                       << std::right << std::setw(3) << "DESCRIPTION" << std::endl
                       << std::left << std::setw(14) << "======="
                       << std::right << std::setw(3) << "===========" << std::endl;
-            for (const auto &p : command_map_) {
+            for (const auto &p: command_map_) {
                 std::cout << std::left << std::setw(14) << p.first
                           << std::right << std::setw(3) << p.second.get_help() << std::endl;
             }
@@ -34,7 +32,7 @@ namespace ac_core {
             std::cout << command_map_.at(arguments.at(0)).get_name();
             const auto parameters = command_map_.at(arguments.at(0)).get_parameters();
             if (parameters.size() > 0) {
-                for (const auto &p : parameters) {
+                for (const auto &p: parameters) {
                     std::cout << " [" << p << "]";
                 }
             } else {

@@ -1,6 +1,4 @@
-#include "stdafx.h"
 #include "command.h"
-#include <locale>
 #include <algorithm>
 
 namespace ac_core {
