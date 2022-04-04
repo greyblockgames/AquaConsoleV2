@@ -17,11 +17,18 @@ bool exit_application(ac_console::s_vector arguments) {
     return true;
 }
 
+bool run_luaFile(ac_console::s_vector arguments){
+
+    return true;
+}
 
 int main() {
     ac_console::new_title("AquaConsoleV2");
-    main_instance.register_command(ac_core::command("quit", std::vector<string>{}, "quits the program",
+    main_instance.register_command(ac_core::command("quit", ac_console::s_vector{}, "quits the program",
                                                     exit_application));
+
+    main_instance.register_command(ac_core::command("lua", ac_console::s_vector{}, "runs a lua file", run_luaFile));
+
     ac_console::change_current_working_dir("c:\\");
 
     ac_console_commands::register_commands(main_instance);

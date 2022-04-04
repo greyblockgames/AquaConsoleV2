@@ -1,0 +1,13 @@
+# Target labels
+ lua
+# Source files and their labels
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/CMakeFiles/lua
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/CMakeFiles/lua.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/CMakeFiles/lua-complete.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/lua-prefix/src/lua-stamp/lua-install.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/lua-prefix/src/lua-stamp/lua-mkdir.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/lua-prefix/src/lua-stamp/lua-download.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/lua-prefix/src/lua-stamp/lua-update.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/lua-prefix/src/lua-stamp/lua-patch.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/lua-prefix/src/lua-stamp/lua-configure.rule
+C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-minsizerel/lua-prefix/src/lua-stamp/lua-build.rule

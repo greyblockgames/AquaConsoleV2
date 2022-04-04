@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+8b4ae354848a85b0b6de5cc6d19cea72 CMakeFiles/lua
+62be99c38dff01936f3a1785bc8f0d11 CMakeFiles/lua-complete
+1a0246b2de2cbb936a84d1f061c0120e lua-prefix/src/lua-stamp/lua-build
+89c66241d6ef57da34f4be610d40dfeb lua-prefix/src/lua-stamp/lua-configure
+afaa50acd176de0c3f70b0181ca04f25 lua-prefix/src/lua-stamp/lua-download
+74da84a8b0422d74c99f04dc6c848039 lua-prefix/src/lua-stamp/lua-install
+aeacd7a233dcfb3df2e12bbf664ca3a7 lua-prefix/src/lua-stamp/lua-mkdir
+3e68472c349f696a32561b91035ed830 lua-prefix/src/lua-stamp/lua-patch
+8b3d5170c4a4ad21c0251a60040a4713 lua-prefix/src/lua-stamp/lua-update

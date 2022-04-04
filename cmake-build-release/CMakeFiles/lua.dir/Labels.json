@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/CMakeFiles/lua"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/CMakeFiles/lua.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/CMakeFiles/lua-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/lua-prefix/src/lua-stamp/lua-install.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/lua-prefix/src/lua-stamp/lua-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/lua-prefix/src/lua-stamp/lua-download.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/lua-prefix/src/lua-stamp/lua-update.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/lua-prefix/src/lua-stamp/lua-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/lua-prefix/src/lua-stamp/lua-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Lukas Olson/Documents/projects/AquaConsoleV2/cmake-build-release/lua-prefix/src/lua-stamp/lua-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lua"
+		],
+		"name" : "lua"
+	}
+}

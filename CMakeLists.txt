@@ -9,6 +9,7 @@ include_directories(.)
 include_directories(AquaConsoleCore)
 include_directories(AquaConsoleV2)
 
+
 add_executable(AquaConsoleV2
         AquaConsoleCore/command.cpp
         AquaConsoleCore/command.h
@@ -19,4 +20,4 @@ add_executable(AquaConsoleV2
         AquaConsoleV2/console.h
         AquaConsoleV2/defaultcommands.cpp
         AquaConsoleV2/defaultcommands.h
-        AquaConsoleV2/termcolor.hpp AquaConsoleV2/main.cpp)
+        AquaConsoleV2/termcolor.hpp AquaConsoleV2/main.cpp AquaConsoleV2/sol.h)
